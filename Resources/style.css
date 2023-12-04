@@ -1,0 +1,571 @@
+:root {
+    --playFair: 'Playfair Display', serif;
+    --robot0: 'Roboto', sans-serif;
+    --openSans: 'Open Sans', sans-serif;
+    --Dusty-Blue: #faf7fa;
+    /* for headers or accents */
+    --Dark-Dusty-Blue: #4477AA;
+    /* for button hover*/
+    --Charcoal-Gray: #333333;
+    /*text and backgrounds*/
+    --White: #ffffff;
+    /*for backgrounds*/
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333333;
+    background-color: var(--White);
+    box-sizing: border-box;
+}
+
+.logo_container {
+    position: sticky;
+    width: 100%;
+    max-height: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--White);
+    z-index: 5px;
+    border-bottom: 1px solid black;
+    top: 0px;
+}
+
+
+
+nav li {
+    display: inline-block;
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+
+nav li a {
+
+    color: #000000;
+}
+
+.logo img {
+    color: #ffffff;
+    max-width: 300px;
+}
+
+.hero {
+    background-image: linear-gradient(to bottom, rgba(87, 14, 69, 0.026), rgba(245, 246, 252, 0.125)), url("img/close-up-of-two-gold-wedding-rings-for-a-wedding.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 640px;
+
+
+}
+
+
+.hero_title {
+    text-align: center;
+
+}
+
+h1,
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+
+
+}
+
+h1 {
+    font-family: var(--playFair);
+    color: var(--Dusty-Blue);
+    font-size: 4.25rem;
+    letter-spacing: 7px;
+    margin-top: 10%;
+
+}
+
+h2 {
+    font-family: var(--playFair);
+    font-size: 3rem;
+    text-align: center;
+    margin: 60px;
+
+}
+
+h5 {
+    font-family: var(--robot0);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hero_title p {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+
+
+.about_container {
+    width: 75%;
+    padding: 40px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+/* set all img tags to 100% */
+img {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* portfolio grid */
+.grid_container {
+    width: 85%;
+
+    overflow: hidden;
+    display: grid;
+    align-items: center;
+    gap: 15px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+
+
+}
+
+
+.pic1 {
+    grid-area: 1 / 3 / span 1 / span 1;
+    height: 100%;
+
+}
+
+.pic2 {
+    grid-area: 2 / 3 / span 1 / span 1;
+    height: 100%;
+}
+
+.pic3 {}
+
+
+.pic4 {
+    grid-area: 1 / 1 / span 2 / span 2;
+    height: 100%;
+
+}
+
+.pic5 {
+    grid-area: 4 / 2 / span 1 / span 2;
+
+    height: 100%;
+
+
+}
+
+.pic6 {
+    grid-area: 3 / 1 / span 1 / span 1;
+    height: 100%;
+}
+
+.pic7 {
+    grid-area: 3 / 2 / span 1 / span 1;
+    height: 100%;
+
+}
+
+.pic8 {
+    grid-area: 3 / 3 / span 1 / span 1;
+
+    height: 100%;
+
+
+}
+
+.pic9 {
+    grid-area: 4 / 1 / span 1 / span 1;
+    height: 100%;
+}
+
+
+.service_container {
+    width: 85%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    align-self: center;
+
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+
+}
+
+.service_container a img {
+
+
+    font-family: var(--playFair);
+    aspect-ratio: 1/1.5;
+    object-fit: cover;
+
+
+
+
+
+
+
+
+}
+
+.service_items > h3 {
+    text-align: center;
+    color: rgb(250, 250, 247);
+    font-size: 2rem;
+    font-family: var(--playFair);
+    padding: 10px 0px;
+    border: 1px solid white;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    background-color: #333333;
+    overflow: hidden;
+
+
+
+
+}
+
+
+
+/*.portrait_title,
+.Portraits_container {
+
+}
+
+.portrait_title {}
+
+
+
+.service_items > * {}
+
+.Portraits_container {}
+
+.wedding_container {}
+
+.family_container {}
+
+.boudoir_container {}*/
+
+
+
+
+
+#testimonials {
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: space-around;
+    justify-items: center;
+    align-self: center;
+    margin-bottom: 50px;
+}
+
+#testimonials .container {
+    justify-items: center;
+
+}
+
+.icon_container {
+    display: grid;
+    justify-items: center;
+    align-self: center;
+    align-self: flex-start;
+}
+
+.icon_container p {
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 12px
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+}
+
+.title_testimonial {
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+
+.checked {
+    color: gold;
+    padding: 20px 0px 20px 0px;
+}
+
+
+nav li a:hover {
+    text-shadow: 2px 2px 5px rgba(128, 128, 128, 0.375);
+}
+
+.footer_container {
+    height: auto;
+    border-top: 1px solid var(--Charcoal-Gray);
+    padding: 30px 30px 70px 30px;
+    background-color: var(--Charcoal-Gray);
+    text-align: center;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: end;
+
+}
+
+.footer_container .social_media {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.social_media a {
+
+    border: 1px solid white;
+    border-radius: 50%;
+
+    color: white;
+    background-color: var(--Dark-Dusty-Blue);
+    margin: 50px 10px;
+    padding: 15px;
+
+}
+
+.copyright {
+    font-size: 1rem;
+    padding: 15px;
+
+}
+
+
+
+@media only screen and (max-width: 900px) {
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+
+
+
+
+    #testimonials {
+        margin-top: 90px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .title_testimonial {
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+    }
+
+    .service_container {
+        width: 85%;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        gap: 5px;
+        align-self: center;
+
+        margin: 0 auto;
+
+
+    }
+
+
+
+    .service_items {
+        display: flex;
+        flex-wrap: wrap;
+
+
+    }
+
+
+
+    .footer_container {
+        height: 250px;
+        border-top: 1px solid var(--Charcoal-Gray);
+        padding: 40px;
+        background-color: var(--Charcoal-Gray);
+
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+
+
+    nav li a {
+        display: block;
+        padding: 10px;
+        font-weight: bold;
+        letter-spacing: 1px;
+
+        text-decoration: none;
+
+
+
+    }
+
+    nav {
+        margin-top: 200px;
+        position: sticky;
+        bottom: 160px;
+        background-color: #ffffffdc;
+
+
+    }
+
+
+    .grid_container {
+
+
+
+        grid-template-columns: 1fr;
+
+
+
+    }
+
+    .pic1 {
+        grid-area: 1 / 1 /span 1 / span 1;
+
+    }
+
+    .pic2 {
+        grid-area: 2 / 1 /span 1 / span 1;
+    }
+
+    /* .pic3 {} */
+
+    .pic4 {
+        grid-area: 3 / 1 /span 1 / span 1;
+    }
+
+    .pic5 {
+        grid-area: 7 / 1 /span 1 / span 1;
+    }
+
+    .pic6 {
+        grid-area: 4 / 1 /span 1 / span 1;
+    }
+
+    .pic7 {
+        grid-area: 5 / 1 /span 1 / span 1;
+    }
+
+    .pic8 {
+        grid-area: 6 / 1 /span 1 / span 1;
+    }
+
+
+    .service_container {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 5px;
+        align-self: center;
+
+        margin: 0 auto;
+
+
+    }
+
+    .service_items {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+
+    #testimonials {
+
+        margin: 0 auto;
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+        justify-content: space-around;
+        justify-items: center;
+        align-self: center;
+
+    }
+
+    .title_testimonial {
+        grid-column-start: 1;
+        grid-column-end: 1;
+
+    }
+
+    .icon_container p {
+        width: 90%;
+        text-align: center;
+        padding: 10px;
+        margin: 0 auto;
+
+    }
+
+    .icon_container h5 {
+        margin-bottom: 10px;
+    }
+
+    .footer_container {
+        height: auto;
+        border-top: 1px solid var(--Charcoal-Gray);
+        padding: 40px;
+        background-color: var(--Charcoal-Gray);
+
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+    }
+
+    .footer_container .social_media {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+}
